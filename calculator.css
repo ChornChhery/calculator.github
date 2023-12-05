@@ -1,0 +1,101 @@
+html {
+  box-sizing: border-box;
+  height: 100%;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  align-items: center;
+  background: linear-gradient(320deg, green, rgb(23, 223, 146), yellow, purple);
+  display: flex;
+  font-family: "Courier New", Courier, monospace;
+  font-display: swap;
+  height: inherit;
+  justify-content: center;
+}
+
+.calculate {
+  backdrop-filter: blur(5.5px);
+  -webkit-backdrop-filter: blur(5.5px);
+  background: white;
+  border: 2px solid rgb(0, 0, 0);
+  border-radius: 16px;
+  box-shadow: 0 4px 30px rgb(123, 109, 109);
+  color: black;
+  font-weight: 1000;
+  backdrop-filter: blur(4px);
+  -webkit-backdrop-filter: blur(4px);
+  background: rgb(255, 255, 255);
+  border: 1px solid rgb(137, 136, 134);
+  flex-basis: 400px;
+  height: 540px;
+  padding: 25px 35px;
+}
+
+.screen {
+  backdrop-filter: blur(5.5px);
+  -webkit-backdrop-filter: blur(5.5px);
+  background: rgb(255, 255, 255);
+  border: 3px solid rgb(37, 168, 250);
+  border-radius: 19px;
+  box-shadow: burlywood;
+  color: rgb(0, 0, 0);
+  font-size: 33px;
+  overflow: auto;
+  padding: 15px;
+  text-align: right;
+  width: 350px;
+}
+
+.cal-row {
+  display: flex;
+  justify-content: space-between;
+  margin: 5% 0;
+}
+
+.cal-button {
+  backdrop-filter: blur(5.5px);
+  -webkit-backdrop-filter: blur(5.5px);
+  background: rgb(0, 0, 0);
+  border: 1px soild rgb(157, 153, 153);
+  border-radius: 16px;
+  box-shadow: 0 4px 30px;
+  color: rgb(255, 255, 255);
+  flex-basis: 20%;
+  font-size: 25px;
+  font-family: inherit;
+  height: 70px;
+  font-weight: 800;
+}
+.cal-button:hover {
+  cursor: pointer;
+  background-color: rgb(238, 35, 35);
+  color: white;
+  transition: 0.3 all ease;
+}
+
+.cal-button:last-child {
+  backdrop-filter: blur(5.5);
+  -webkit-backdrop-filter: blur(5.5px);
+  background: greenyellow;
+  border: 1px solid rgb(220, 220, 220);
+  border-radius: 19px;
+  box-shadow: 0 4px 20px rgb(119, 114, 114);
+  color: white;
+  font-weight: 800;
+  background: rgb(35, 206, 35);
+}
+
+.cal-button:last-child:hover {
+  /* background-color: rgb(131, 139, 99); */
+  color: rgb(0, 0, 0);
+  background-color: rgba(24, 240, 222, 0.7);
+  cursor: pointer;
+}
